@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Scrap Game - connexion</title>
+    </head>
+
+    <body>
+        <!--Tête de page-->
+        <header>
+            <nav>
+                <ul class="nav">
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="combatZone.html">Jeux</a></li>
+                    <li><a href="">Mes Scraps</a></li>
+                    <li><a href="connect.html">Connexion</a></li>
+                </ul>
+                <div id="dark_mode">
+                    <img id="light_img" src="images/LightMode.png" class="desactivate">
+                    <img id="dark_img" src="images/DarkMode.png">
+                </div>
+                <div id="cash_text">
+                </div>
+            </nav>
+            <div class="title">
+                <h1>Scrap Game</h1>
+                <h2 class="subtitle">Connexion</h2>
+            </div>
+        </header>
+
+        <main class="form">
+            <div class="message-error">
+                <ul></ul>
+            </div>
+            <div class="message-success">
+                Compte créé !
+            </div>
+
+            <form action="" method="post" enctype="multipart/form-data">
+
+                <div>
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email">
+                </div>
+                <div>
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="Votre mot de passe">
+                    <div class="showPassword">
+                        <label>Montrer</label>
+                        <input type="checkbox" onclick="showPassword(0)">
+                    </div>   
+                        
+                </div>
+                <div>
+                    <label for="password2">Confirmer votre mot de passe</label>
+                    <input type="password" id="password2" name="password2" placeholder="Votre mot de passe">
+                    <div class="showPassword">
+                        <label>Montrer</label>
+                        <input type="checkbox" onclick="showPassword(1)">
+                    </div> 
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="conf" name="confidentialité" >
+                    <label for="conf">J'accepte les conditions générales et la politique de confidentialité.</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="email-send" name="email-send" >
+                    <label for="email-send">J'accepte de recevoir des mails pour me tenir au courant des actualités et nouveautés.</label>
+                </div>
+
+                <div class="button"><button type="submit">Créé son compte</button></div>
+            </form>
+        </main>
+
+    <!--Installation du code JS-->
+        <script src="connect.js"></script>
+    </body>
+</html>

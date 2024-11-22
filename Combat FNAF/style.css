@@ -1,0 +1,349 @@
+/* Animation keyframe */
+
+
+/* Mise en page */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.white {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+button {
+    cursor: pointer;
+}
+
+    /* Mise en page du header*/
+
+header {
+    background-image: url(images/home-picture.png);
+    background-position: -200px -50px;
+    
+    font-size: 1.4em;
+    height: 800px;
+}
+
+nav {
+    background-color: rgb(113, 113, 113, 0.3);
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 40%;
+    list-style: none;
+}
+
+li {
+    align-content: center;
+    margin-right: 2%;
+    margin-top: 1.2%;
+    padding: 2%;
+    font-family: 'Lucida Console';
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+}
+
+nav a:hover {
+    color: rgb(117, 100, 248);
+}
+
+nav a:active {
+    color: rgb(63, 55, 218);
+}
+
+#dark_mode {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+#dark_img {
+    width: 20%;
+    height: 85%;
+}
+#light_img {
+    width: 20%;
+    height: 85%;
+}
+
+.title {
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+
+    text-align: center;
+    padding-top: 15%;
+}
+
+.subtitle {
+    color:rgb(85, 55, 255);
+}
+
+h1, h2 {
+    font-weight: 200;
+}
+
+#cash_text {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    color: white;
+    font-family: 'Lucida Console';
+}
+#cash {
+    color:rgb(216, 130, 31);
+}
+
+    /* Mise en page du Store*/
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+        /* Boutons*/
+.tab {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+li button {
+    color: currentColor;
+    font-size: 1.3em;
+    padding: 10%;
+    background-color: rgb(110, 110, 133);
+    border: 5px solid #220a7b;
+    transition: font-size 1s;
+    opacity: 50%;
+}
+li button:hover {
+    font-size: 1.6em;
+    opacity: 70%;
+}
+
+.tab-active {
+    opacity: 100%;
+}
+.tab-active:hover {
+    opacity: 100%;
+}
+
+.light_button {
+    background-color: aqua;
+    border: 5px solid #000000;
+}
+
+.scrap {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.info_scrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    height: 40%;
+    width: 40%;
+}
+
+h3 {
+    font-family: 'Snap ITC';
+    font-size: 2em;
+    padding-bottom: 5%;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.select {
+    height: 7%;
+    width: 14%;
+    position: relative;
+        left: -17%;
+        bottom: -5%;
+}
+
+.buy {
+    font-family: 'Lucida Console';
+    font-size: 1.5em;
+    padding-bottom: 2%;
+    color: currentColor;
+    cursor: pointer;
+}
+
+#price {
+    color: rgb(209, 209, 47);
+}
+
+#fredbear, #springbonnie {
+    color: rgb(218, 216, 62);
+}
+#freddy {
+    color: rgb(206, 119, 43);
+}
+#bonnie {
+    color: rgb(46, 43, 206);
+}
+#chica {
+    color: rgb(206, 201, 43);
+}
+#foxy {
+    color: rgb(206, 43, 43);
+}
+#golden {
+    color: rgb(255, 228, 24);
+}
+#puppet {
+    color: rgb(60, 46, 255);
+}
+#balloon {
+    color: rgb(253, 145, 13);
+}
+#mangle {
+    color: rgb(255, 0, 0);
+}
+#fredbear2 {
+    color: rgb(194, 112, 39);
+}
+#nightmare {
+    color: rgb(119, 117, 138);
+}
+#springtrap {
+    color: rgb(193, 237, 17);
+}
+
+#egg {
+    color: black;
+    opacity: 0%;
+    position: absolute;
+        left: 9%;
+        bottom: -22%;
+}
+
+h4 {
+    font-family: 'Tempus sans ITC';
+    font-size: 1.5em;
+    padding-bottom: 2%;
+}
+
+span {
+    color :red;
+}
+#res {
+    color: greenyellow;
+}
+
+    /* Mise en page de la page de connexion*/
+
+.form {
+    font-size: 1em;
+    width: 30%;
+    margin: 80px auto;
+    font-family: 'lucida console';
+}
+
+form {
+    border: 1px solid currentColor;
+}
+
+form > div {
+    margin: 30px 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 80%;
+    height: 20px;
+}
+.checkbox input {
+    width: 10%;
+    height: 20px;
+}
+
+.checkbox {
+    margin: 0px;
+    display: flex;
+    font-size: 0.7em;
+}
+
+.showPassword {
+    margin: 5px;
+    display: flex;
+    font-size: 0.9em;
+    width: 30%;
+    height: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+.button button{
+    font-size: 1.3em;
+    padding: 2% 4%;
+}
+
+.message-error {
+    border: 1px solid red;
+    color: rgb(213, 30, 30);
+    background-color: rgb(255, 0, 0, 0.4);
+    padding: 16px 32px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.message-success {
+    border: 1px solid rgb(0, 97, 15);
+    color: rgb(30, 213, 73);
+    background-color: rgba(35, 208, 64, 0.493);
+    padding: 16px 32px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.success {
+    border: 1px solid rgb(33, 229, 62);
+    background-color: rgba(113, 212, 0, 0.781);
+}
+
+    /* Petit plus */
+
+.desactivate {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

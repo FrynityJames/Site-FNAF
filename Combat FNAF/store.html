@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Scrap Game</title>
+    </head>
+
+    <body>
+        <!--Tête de page-->
+        <header>
+            <nav>
+                <ul class="nav">
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="combatZone.html">Jeux</a></li>
+                    <li><a href="">Mes Scraps</a></li>
+                    <li><a href="connect.html">Connexion</a></li>
+                </ul>
+                <div id="dark_mode">
+                    <img id="light_img" src="images/LightMode.png" class="desactivate">
+                    <img id="dark_img" src="images/DarkMode.png">
+                </div>
+                <div id="cash_text">
+                    <p>Cash:<span id="cash"></span>$</p>
+                </div>
+            </nav>
+            <div class="title">
+                <h1>Scrap Game</h1>
+                <h2 class="subtitle">Store</h2>
+            </div>
+        </header>
+
+        <!--Partie principale-->
+        <main>
+            
+            <ul class="tab">
+                <li><button class="FFD_but">Fazbear Family Dinner</button></li>
+                <li><button class="FNAF_but tab-active">Freddy Fazbear Pizza</button></li>
+                <li><button class="FNAF2_but">Freddy Fazbear Pizza Toy</button></li>
+                <li><button class="FF_but">Fazbear Frights</button></li>
+                <li><button class="Night_but">Nightmare</button></li>
+            </ul>
+
+            <section class="FFD desactivate">
+                <section class="scrap">
+                    <img src="images/Fredbear.png">
+                    <div class="info_scrap">
+                        <h3 id="fredbear">Fredbear</h3>
+                        <h4>Le premier animatronique de la franchise ! Et la première mascotte ! Il a aussi été acteur dans la tragédie de 83...</h4>
+                        <h4>Force : <span>12</span></h4>
+                        <img class="select invisible" id="11" src="images/select.png">
+                        <a class="buy 11">Acheter : <span id="price">400</span>$</a>
+                    </div>
+                </section>
+
+                <section class="scrap">
+                    <img src="images/Springbonnie.png">
+                    <div class="info_scrap">
+                        <h3 id="springbonnie">Springbonnie</h3>
+                        <h4>Les enfants l'adorait ! Jusqu'à que son créateur, William Afton, enfila son costume...</h4>
+                        <h4>Force : <span>10</span></h4>
+                        <img class="select invisible" id="12" src="images/select.png">
+                        <a class="buy 12">Acheter : <span id="price">400</span>$</a>
+                    </div>
+                </section>
+            </section>
+
+            <section class="FNAF content">
+                <section class="scrap">
+                    <img src="images/Freddy.png">
+                    <button id="egg", onclick="toy_sound()">NOIR</button>
+                    <div class="info_scrap">
+                        <h3 id="freddy">Freddy</h3>
+                        <h4>La mascotte principale de fazbear entertainment et celle que le public a le plus retenu.</h4>
+                        <h4>Force : <span>10</span></h4>
+                        <img class="select invisible" id="0" src="images/select.png">
+                        <a class="buy 0">Acheter : <span id="price">200</span>$</a>
+                    </div>
+                </section>
+
+                <section class="scrap">
+                    <img src="images/Bonnie.png">
+                    <div class="info_scrap">
+                        <h3 id="bonnie">Bonnie</h3>
+                        <h4>Le lapin préféré des enfants pendant les années 90!</h4>
+                        <h4>Force : <span>6</span></h4>
+                        <img class="select invisible" id="1" src="images/select.png">
+                        <a class="buy 1">Acheter : <span id="price">200</span>$</a>
+                    </div>
+                </section>
+
+                <section class="scrap">
+                    <img src="images/Chica.png">
+                    <div class="info_scrap">
+                        <h3 id="chica">Chica</h3>
+                        <h4>Une canne qui adore mangé des pizza et ce qu'elle trouve dans les poubelles.</h4>
+                        <h4>Force : <span>8</span></h4>
+                        <img class="select invisible" id="2" src="images/select.png">
+                        <a class="buy 2">Acheter : <span id="price">200</span>$</a>
+                    </div>
+                </section>
+
+                <section class="scrap">
+                    <img src="images/Foxy.png">
+                    <div class="info_scrap">
+                        <h3 id="foxy">Foxy</h3>
+                        <h4>Sûrement la mascotte préféré des enfants ! Un renard pirate prêt à tous pour jouer avec vous.</h4>
+                        <h4>Force : <span>12</span></h4>
+                        <img class="select invisible" id="3" src="images/select.png">
+                        <a class="buy 3">Acheter : <span id="price">250</span>$</a>
+                    </div>
+                </section>
+
+                <section class="scrap">
+                    <img src="images/Golden.png">
+                    <div class="info_scrap">
+                        <h3 id="golden">Golden Freddy</h3>
+                        <h4>Un fantôme ? Un vieil ami vivant dans l'ombre ? Qui sait...</h4>
+                        <h4>Force : <span>15</span></h4>
+                        <img class="select invisible" id="4" src="images/select.png">
+                        <a class="buy 4">Acheter : <span id="price">300</span>$</a>
+                    </div>
+                </section>
+            </section>
+
+            <section class="FNAF2 desactivate">
+                <section class="scrap">
+                    <img src="images/Puppet.png">
+                    <div class="info_scrap">
+                        <h3 id="puppet">Puppet</h3>
+                        <h4>Elle abrite l'âme de la première victime de William Afton. Elle est aussi celle qui donna une seconde chance aux enfants morts.</h4>
+                        <h4>Force : <span>0</span></h4>
+                        <h4>Spécialité : <span id="res">Résurrection</span></h4>
+                        <img class="select invisible" id="5" src="images/select.png">
+                        <a class="buy 5">Acheter : <span id="price">800</span>$</a>
+                    </div>
+                </section>
+
+                <section class="scrap">
+                    <img src="images/balloon.png">
+                    <div class="info_scrap">
+                        <h3 id="balloon">Balloon Boy</h3>
+                        <h4>Tout ce que nous savons sur ce petit bonhomme c'est qu'il aime manger les piles.</h4>
+                        <h4>Force : <span>5</span></h4>
+                        <h4>Spécialité : <span id="res">Désactivation</span></h4>
+                        <img class="select invisible" id="6" src="images/select.png">
+                        <a class="buy 6">Acheter : <span id="price">150</span>$</a>
+                    </div>
+                </section>
+
+                <section class="scrap">
+                    <img src="images/Mangle.png">
+                    <div class="info_scrap">
+                        <h3 id="mangle">Mangle</h3>
+                        <h4>Les enfants s'amusaient à la démonter et la remonter. Elle était faite pour ça. Elle causa la fermeture de la pizzeria en réalisant la morsure de 87.</h4>
+                        <h4>Force : <span>15</span></h4>
+                        <img class="select invisible" id="7" src="images/select.png">
+                        <a class="buy 7">Acheter : <span id="price">300</span>$</a>
+                    </div>
+                </section>
+            </section>
+
+            <section class="FF desactivate">
+                <section class="scrap">
+                    <img src="images/Springtrap.png">
+                    <div class="info_scrap">
+                        <h3 id="springtrap">Springtrap</h3>
+                        <h4>Ce lapin étrange est enfaite hanté par l'esprit d'un meurtrier ayant arraché des enfants à leur famille.</h4>
+                        <h4>Force : <span>23</span></h4>
+                        <img class="select invisible" id="8" src="images/select.png">
+                        <a class="buy 8">Acheter : <span id="price">700</span>$</a>
+                    </div>
+                </section>
+            </section>
+
+            <section class="Night desactivate">
+                <section class="scrap">
+                    <img src="images/NightmareFredbear.png">
+                    <div class="info_scrap">
+                        <h3 id="fredbear2">Nightmare Fredbear</h3>
+                        <h4>Comment le fis de William voit Fredbear dans ses cauchemars.</h4>
+                        <h4>Force : <span>30</span></h4>
+                        <img class="select invisible" id="9" src="images/select.png">
+                        <a class="buy 9">Acheter : <span id="price">500</span>$</a>
+                    </div>
+                </section>
+
+                <section class="scrap">
+                    <img src="images/Nightmare.png">
+                    <div class="info_scrap">
+                        <h3 id="nightmare">Nightmare</h3>
+                        <h4>Le cauchermar en personne. Le fils de William s'en voulait toujours pour ce qu'il a fait à son petit frère...</h4>
+                        <h4>Force : <span>35</span></h4>
+                        <img class="select invisible" id="10" src="images/select.png">
+                        <a class="buy 10">Acheter : <span id="price">550</span>$</a>
+                    </div>
+                </section>
+            </section>
+
+        </main>
+
+    <!--Installation du code JS-->
+        <script src="main.js"></script>
+    </body>
+</html>
